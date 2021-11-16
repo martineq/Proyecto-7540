@@ -1,0 +1,8 @@
+Una compañía cuenta con 2 archivos binarios. En uno se almacenan los datos personales y laborales de los empleados. En el otro, se almacenan porcentajes de aumento de sueldos (se les aumenta el sueldo a la mitad de los empleados).
+Los objetivos del programa son:
+
+-    Realizar 2 listados de acuerdo a diferentes criterios.
+-	Informar los días de la semana que no trabaja ningún empleado.
+-	Modificar los días de trabajo de los empleados.
+-	Actualizar el archivo de “Empleados” según los aumentos de sueldo del archivo “Aumentos”.
+

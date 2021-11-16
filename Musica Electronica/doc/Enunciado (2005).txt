@@ -1,0 +1,19 @@
+Enunciado:
+
+La empresa organizadora de un festival de música electrónica, necesita un programa para organizar y realizar estadísticas acerca de los artistas y los temas que tocarán cada uno de ellos durante el festival.
+Se sabe que hay como máximo 30 DJs y cada uno tocará como máximo 20 temas.
+Además existe una lista de temas presentados para todos los DJs que incluyen 250 temas.
+Un DJ puede repetir temas, pero un tema puede ser tocado por mas de un DJ.
+
+Se pide:
+1.Ingresar la lista general de temas, la lista con los nombres de los DJs, y los nombres de los temas que tocaron cada uno a partir de la lista total de temas presentados. 
+Ingresar la duración de los temas en formato MM:SS. 
+Validar que los temas ingresados para cada DJ existan en la lista general de temas presentados. Validar el ingreso de la duración de los temas, un tema no puede durar mas de 15 minutos.
+
+2.Indicar cuál o cuáles son los DJ que mas tiempo tocarán y el tiempo (de acuerdo con la duración de los temas que tocará cada uno). Mostrar el tiempo en formato HH:MM:SS.
+
+3.Indicar cuál o cuáles son los temas que mas veces serán tocados.
+
+4.Mostrar la lista de temas ordenados por nombre de forma ascendente.
+
+5.Indicar que DJ tocará el tema mas largo y la duración y nombre del tema.

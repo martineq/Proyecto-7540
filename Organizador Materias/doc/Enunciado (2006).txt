@@ -1,0 +1,76 @@
+Objetivos:
+
+	El objetivo principal del programa es guardar información de materias a fin de obtener reportes para poder prestarle a al alumno facilidad a la hora de elegir que materias cursar en el cuatrimestre mediante.
+
+   Dentro de este objetivo principal se encuentran tareas como:
+   
+* Cargar materias por teclado y guardarlas en un archivo de registros.
+
+* Importar las materias desde un archivo “materias.xml”, guardándose en un archivo de registros.
+
+* Exportar las materias a un archivo *.xml con un orden determinado, desde un archivo de registros “materias.dat”.
+
+* Listar todas las materias que se han procesado con un cierto orden de prioridades.
+
+* Listar todas las materias que se han procesado, pero filtrando ciertos campos que se especifiquen.
+
+
+
+
+Resultados:
+
+	En el caso que el usuario, al iniciar el programa, decida inmediatamente terminarlo, el programa suministrará como resultado un conjunto vacío de datos.
+
+	En el caso que el usuario utilice alguno o algunos de los comandos de los menús , obtendrá como resultado un conjunto no vacío en el momento de requerir: * Cargar materias manualmente (por teclado), *Importar desde un archivo xml, * Exportar a un archivo xml, * Imprimir en pantalla los listados de materias con un orden de prioridad determinado (si el archivo de registros no está vacío), *Reportar en pantalla las materias filtradas según los campos especificados (si el archivo de registros no está vacío o si no se filtran todos los registros al momento de especificar los campos).
+
+
+
+
+
+
+Datos:
+
+	En el transcurso (ejecución) del programa el usuario deberá ingresar varios tipos de datos:
+
+
+* Cantidad de materias: El usuario deberá ingresar n cantidad de materias en el momento de elegir el comando “cargar materias” del menú archivo.
+
+* Datos de la materia: El usuario ingresará una lista de datos que conforman la totalidad de un registro que identifica a una materia compuesta por: *Código de materia, *Nombre de la materia, *Nombre del profesor, *Día de curso, *Hora de comienzo, *Hora de finalización, *Número de aula.
+
+* Ruta de los archivos: En ciertos puntos del transcurso del programa se le pedirá al usuario la ruta de ubicación de ciertos archivos que se puedan necesitar para la ejecución del comando que haya requerido (por ejemplo al exportar desde xml).
+
+* Orden de prioridades: El usuario alistará un tipo de ordenamiento con el cuál se listarán las materias. Las opciones pueden ser: *Nombre, *Código, *Día.
+
+* Campos a filtrar: El usuario ingresará según el campo que especifique una palabra, la cual servirá para poder filtrar los registros que contengan ésta en el campo indicado.
+
+
+
+
+
+Diseño de estrategia:
+
+	El programa poseerá un inicio, un proceso y un fin, en todas las instancias tendrán distintos tipos de acciones a realizar:
+
+
+* Inicio: 
+
+o Se muestra en pantalla un menú donde el usuario podrá seleccionar la tarea que desea realizar, cada tarea estará vinculada a un número que el usuario deberá elegir, si no existe un Nº de tarea determinado se le será indicado al usuario repitiendo esto hasta que se ingrese un Nº de tarea válida.
+
+
+
+* Proceso:
+
+o En la tarea 1 se cargan manualmente los datos de la cantidad de materias que el usuario haya requerido, guardando uno a uno los registros pertenecientes a cada una de las materias en una archivo binario (de registros) llamado “materias.dat”.
+
+o En la tarea 2 se importan los registros desde xml. Esto quiere decir que se toma un archivo *.xml y desde éste se procesan los datos que contengan para luego armar los registros y poder guardarlos uno por uno en el archivo binario.
+
+o En la tarea 3 se exportan los registros a xml. O sea que se toma el archivo de registros “materias.dat” y desde éste se leen los datos que contenga para luego armar la estructura de el archivo *.xml y poder guardarlos con un orden determinado.
+
+o En la tarea 4 se genera un listado de todas las materias procesadas pero al imprimirlas por pantalla primero se ordenan con un cierto criterio elegido por el usuario, elegido de las opciones: nombre, día, código, combinaciones de éstos  o ninguno de ellos.
+
+o En la tarea 5 se realiza un filtrado de materias, para que el usuario pueda buscar ciertas materias específicas que necesite. Esto se realiza pidiéndole al usuario para cada campo una palabra clave, la cuál se usará para el filtrado de materias, y de esta forma listar sólo los registros con las materias de interés. 
+
+* Fin: 
+
+o Una vez que el usuario realiza todas sus tareas, cargando materias, exportando, importando o listando las materias, puede acceder a salir del programa usando la opción de “salir” de la tarea 6.
+
